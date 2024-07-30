@@ -46,7 +46,7 @@ export default function Header(){
                          },
                        }}
                        viewport={{ once: true, direction: "down" }} 
-           className="text-blue-800 ml-16 lg:ml-32 font-bigfont text-2xl lg:text-8xl uppercase ">
+           className="text-blue-800 ml-16 lg:ml-32 font-bigfont text-4xl lg:text-8xl uppercase ">
                                         <Typewriter
                               options={{
                                 strings: ['Brighter Tomorrow'],
