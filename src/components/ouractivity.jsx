@@ -25,18 +25,25 @@ export default function Ouractivity(){
     ]
     return(
         <div className="bg-blue-900  lg:mt-0 h-96 w-screen flex flex-col items-center ">
-             <motion.h1    initial={{
-                opacity: 0,
-                y: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 1,
-                  delay: 0.6,
-                },
-              }} className=" text-3xl lg:text-7xl text-center text-rose-100 mt-10  font-bold"> <VisibilityTwoTone color='secondary' fontSize="large"/>Our mission and value</motion.h1>
+               <motion.h1
+      initial={{
+        opacity: 0,
+        y: 50, // Start below the final position
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0, // Move to final position
+        transition: {
+          duration: 1, // Duration of animation
+          delay: 0.6,  // Delay before starting animation
+        },
+      }}
+      viewport={{ once: true, direction: "down" }} // Ensure it only animates once
+      className="text-3xl lg:text-7xl text-center text-rose-100 mt-10 font-bold"
+    >
+      <VisibilityTwoTone color="secondary" fontSize="large" />
+      Our mission and value
+    </motion.h1>
             <motion.div i initial={{
                 opacity: 0,
                 y: 50,
@@ -48,7 +55,9 @@ export default function Ouractivity(){
                   duration: 1,
                   delay: 1.1,
                 },
-              }}  className="flex flex-col lg:flex-row justify-center  gap-2 lg:gap-8 mt-8 lg:mt-32">
+              }} 
+              viewport={{ once: true, direction: "down" }} 
+              className="flex flex-col lg:flex-row justify-center  gap-2 lg:gap-8 mt-8 lg:mt-32">
                 {our_activity_data.map((activi, index) =>(
 
                      <Card key={index} className="max-w-80 lg:max-w-sm">

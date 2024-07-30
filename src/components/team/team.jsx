@@ -121,6 +121,7 @@ export default function Team(){
                     delay: 0.6,
                   },
                 }}
+                viewport={{ once: true, direction: "down" }} 
          className="text-center mt-60 text-blue-900 text-4xl lg:text-6xl">
            Meet Our Teams
         </motion.h1>
@@ -138,6 +139,7 @@ export default function Team(){
               delay: 0.9,
             },
           }}
+          viewport={{ once: true, direction: "down" }} 
          className="flex flex-col lg:flex-row  pt-10 lg:flex justify-between lg:gap-32">
         {/* BOARD OF TRUSTEES */}
             <div className="grid">

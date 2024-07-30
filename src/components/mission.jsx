@@ -52,10 +52,12 @@ export default function OurMission(){
                  delay: 0.6,
                },
              }}
+             viewport={{ once: true, direction: "down" }} 
              className="text-blue-950 text-center text-3xl lg:text-7xl font-bold">
                 Our Activity
             </motion.h1>
-            <Lottie  animationData={lovegiving} loop={true} className="w-full h-32 ml-4  lg:w-96 lg:h-full lg:absolute lg:mt-3 lg:left-4" />
+            <Lottie  animationData={lovegiving} loop={true}
+             className="w-full h-32 ml-4  lg:w-96 lg:h-full lg:absolute lg:mt-3 lg:left-4" />
             <motion.div
             initial={{
                opacity: 0,
@@ -68,7 +70,10 @@ export default function OurMission(){
                  duration: 1,
                  delay: 0.7,
                },
-             }}  className="mt-2 lg:mt-9 grid grid-cols-2 max-w-3xl place-content-center   lg:grid-cols-3 lg:gap-9">
+             }}
+             viewport={{ once: true, direction: "down" }} 
+             
+              className="mt-2 lg:mt-9 grid grid-cols-2 max-w-3xl place-content-center   lg:grid-cols-3 lg:gap-9">
                         {missionData.map((activi, index) => (
                           <motion.div
                           initial={{
@@ -82,7 +87,9 @@ export default function OurMission(){
                                duration: 1,
                                delay: 1.3,
                              },
-                           }}  key={index} className="grid mt-10 lg:mt-20">
+                           }} 
+                           viewport={{ once: true, direction: "down" }}
+                            key={index} className="grid mt-10 lg:mt-20">
                                 <h1>
                                     {activi.icon || "Default Icon"}
                                 </h1>

@@ -20,6 +20,7 @@ export default function Impact(){
                           delay: 1.6,
                         },
                       }}
+                      viewport={{ once: true, direction: "down" }} 
 
                       className="text-blue-700  text-center text-3xl lg:text-7xl font-bold">
                         <CommuteTwoTone fontSize="large" color="primary"/>  Community Impact
@@ -37,6 +38,7 @@ export default function Impact(){
                           delay: 1.7,
                         },
                       }}
+                      viewport={{ once: true, direction: "down" }} 
                       className=" mt-10 text-xl font-light text-blue-200 text-center">
                       Currently, free education and
                         food is still being provided at
@@ -72,7 +74,8 @@ export default function Impact(){
                       delay: 1.7,
                     },
                   }}
-                   src={attachImg} alt="attachments" className="rounded-lg h-full w-3xl "/>
+                  viewport={{ once: true, direction: "down" }} 
+                  src={attachImg} alt="attachments" className="rounded-lg h-full w-3xl "/>
 
             </div>
 

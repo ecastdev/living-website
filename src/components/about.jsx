@@ -33,6 +33,7 @@ export default function About(){
                     delay: 0.6,
                   },
                 }}
+                viewport={{ once: true, direction: "down" }} 
                     className=' text-4xl lg:text-6xl font-bold lg:mt-20 text-blue-900 text-center'>Strategic <br/> Partners</motion.h1>
      
               <Lottie animationData={partenership} loop={true} className="w-96 h-80" />
@@ -51,6 +52,7 @@ export default function About(){
             delay: 0.8,
           },
         }}
+        viewport={{ once: true, direction: "down" }} 
         className="grid lg:grid-cols-2 gap-32 place-content-center">
           {partnerData.map((activi, index) =>(
 
