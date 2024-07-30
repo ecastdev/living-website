@@ -7,9 +7,14 @@ module.exports = {
     flowbite.content(),
   ],
   theme: {
-    extend: {
+    extend: {},
+    fontFamily: {
+      subt:["Lobster","Pacifico"],
+      title: ["Platypi", 'serif'],
+      intro : ["Danfo", "serif"],
+      bigfont: ["Anton", "sans-serif"]
 
-    },
+    }
   },
   plugins: [
     flowbite.plugin(),
