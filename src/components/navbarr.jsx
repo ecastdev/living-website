@@ -90,7 +90,14 @@ export default function Navbar1() {
                     {item.listName}
                   </Link>
                 </li>
+                
               ))}
+                <Link to='donate'>
+              <button className="bg-red-800 text-blue-400 p-4 hover:bg-white hover:text-rose-900 rounded-lg">
+                Donate
+              </button>
+            </Link>
+              
             </ul>
           </div>
         )}
